@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @person.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @person.body %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %>
+<%= link_to 'Back', people_path %>

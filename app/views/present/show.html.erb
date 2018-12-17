@@ -1,0 +1,18 @@
+<p>
+  <strong>Title:</strong>
+  <%= @present.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @present.body %>
+</p>
+
+<h2>Comments</h2>
+<% render @present.comments %>
+
+<h2>Add a comment:</h2>
+<% render 'comments/form' %>
+
+<%= link_to 'Edit', edit_present_path(@present) %>
+<%= link_to 'Back', presents_path %>
